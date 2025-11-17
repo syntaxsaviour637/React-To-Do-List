@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 const App = () => {
-  const [tasks, setTasks] = useState(["eat"]);
+  const [tasks, setTasks] = useState([]);
   const [task, setTask] = useState('');
   const [completed, setCompleted] = useState([]); // array of completed task indexes
 
@@ -55,7 +55,7 @@ const App = () => {
         </div>
       </form>
 
-      <div>
+      <div className="main">
         <ul className="toDoList">
           {tasks.map((item, index) => (
             <li

@@ -110,3 +110,10 @@
 .toDoList .done {
   text-decoration: line-through wavy #24bffb;
 }
+.main {
+  height: 300px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
